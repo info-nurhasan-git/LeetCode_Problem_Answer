@@ -1,0 +1,32 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="index.css" />
+<title>Weather — check any city (API key)</title>
+ 
+</head>
+<body>
+
+  <main class="app">
+    <h1 class="title">🌤️ Weather</h1>
+
+    <form id="search-form" class="search" autocomplete="off">
+      <input id="city-input" type="text" placeholder="Enter a city name…" aria-label="City name" />
+      <button type="submit" class="btn">Search</button>
+      <button type="button" id="geo-btn" class="btn icon" title="Use my location" aria-label="Use my location">📍</button>
+    </form>
+
+    <section id="output" class="output">
+      <div class="state"><p>Type a city name and press Search.</p></div>
+    </section>
+
+    <footer class="credit">
+      Data from <a href="https://openweathermap.org" target="_blank" rel="noopener">OpenWeatherMap</a>
+    </footer>
+  </main>
+
+ <script src="index.js" type="module"></script>
+</body>
+</html>
